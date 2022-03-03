@@ -55,7 +55,40 @@ allJumpButtons.forEach(function(jumpButton){
     })
 })
 
-answersA.addEventListener('click', function (answerA){
-    console.log('selected')
-})
+for (let c = 0; c < answersA.length; c++) {
+    let element = answersA[c];
+    answersA[c].addEventListener('click', function (){
+        console.log('you clicked A')
+        
+        
+    })
+}
     
+for (let c = 0; c < answersB.length; c++) {
+    let element = answersB[c];
+    answersB[c].addEventListener('click', function (){
+        console.log('you clicked B')
+        
+        
+    })
+}
+
+for (let c = 0; c < answersC.length; c++) {
+    let element = answersC[c];
+    answersC[c].addEventListener('click', function (){
+        console.log('you clicked C')
+        
+        
+    })
+}
+
+for (let c = 0; c < answersD.length; c++) {
+    let element = answersD[c];
+    answersD[c].addEventListener('click', function (){
+        console.log('you clicked D')
+        
+        let optionSelected = document.createElement ('option')
+        optionSelected.classList.add ('selected')
+    })
+}
+

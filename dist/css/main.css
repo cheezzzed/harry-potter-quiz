@@ -223,6 +223,10 @@ body {
 .page.page-q1 button {
   top: 470px;
 }
+.page.page-q1 .selected {
+  background-color: red;
+  color: white;
+}
 .page.page-q2 button {
   top: 420px;
 }
