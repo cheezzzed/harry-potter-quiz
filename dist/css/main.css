@@ -1,0 +1,236 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 
+==============================================
+CONTENT:    Project Name Here
+AUTHOR:     Your Name Here
+==============================================
+TABLE OF CONTENTS:
+0. Reset
+1. Main Layout
+2. Content
+==============================================
+*/
+/* 0. Reset ================================= */
+/* 
+If you want to add partials, use Sass Modules via @use:
+@use 'variables';
+Usage: partial-name.variable/mixin/function-name:
+background: variables.$primary-color;
+*/
+/* 1. Main Layout ================================= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #4b4954;
+}
+
+/* 2. Content ================================= */
+.page {
+  display: none;
+  width: 80%;
+  background-color: white;
+  padding: 60px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px black;
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  transition: 0.5s 500ms;
+}
+.page button {
+  width: 30%;
+  padding: 30px;
+  border-radius: 50px;
+  border-color: orange;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.page button:hover {
+  color: orange;
+}
+.page h1 {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+}
+.page .next {
+  position: absolute;
+  top: 470px;
+  left: 590px;
+}
+.page .prev {
+  position: absolute;
+  top: 470px;
+}
+.page .answers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 85px;
+}
+.page .answer {
+  background-color: cornflowerblue;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 15px;
+  width: 45%;
+}
+.page.page-welcome button {
+  top: 175px;
+}
+.page.page-welcome h1 {
+  margin-right: 100px;
+}
+.page.page-q1 button {
+  top: 470px;
+}
+.page.page-q2 button {
+  top: 420px;
+}
+.page.page-q4 button {
+  top: 425px;
+}
+.page.page-end button {
+  top: 145px;
+  justify-content: center;
+}
+/*# sourceMappingURL=main.css.map */
