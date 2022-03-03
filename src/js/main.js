@@ -7,7 +7,10 @@ let answersA = document.querySelectorAll('.a')
 let answersB = document.querySelectorAll('.b')
 let answersC = document.querySelectorAll('.c')
 let answersD = document.querySelectorAll('.d')
-
+let mordecai = 0
+let rigby = 0
+let muscleMan = 0
+let pops = 0
 
 console.log('I found ' + allPages.length + ' pages!')
 
@@ -59,7 +62,15 @@ for (let c = 0; c < answersA.length; c++) {
     let element = answersA[c];
     answersA[c].addEventListener('click', function (){
         console.log('you clicked A')
+
+        let oldAnswer = document.querySelector( 'div.answer.selected' )
+
+        if (oldAnswer) {
+            oldAnswer.classList.remove('selected')
+        }
         
+        
+        this.classList.add ('selected')
         
     })
 }
@@ -68,7 +79,15 @@ for (let c = 0; c < answersB.length; c++) {
     let element = answersB[c];
     answersB[c].addEventListener('click', function (){
         console.log('you clicked B')
+
+        let oldAnswer = document.querySelector( 'div.answer.selected' )
         
+        if (oldAnswer) {
+            oldAnswer.classList.remove('selected')
+        }
+        
+        
+        this.classList.add ('selected')
         
     })
 }
@@ -77,7 +96,15 @@ for (let c = 0; c < answersC.length; c++) {
     let element = answersC[c];
     answersC[c].addEventListener('click', function (){
         console.log('you clicked C')
+
+        let oldAnswer = document.querySelector( 'div.answer.selected' )
         
+        if (oldAnswer) {
+            oldAnswer.classList.remove('selected')
+        }
+        
+        
+        this.classList.add ('selected')
         
     })
 }
@@ -86,9 +113,15 @@ for (let c = 0; c < answersD.length; c++) {
     let element = answersD[c];
     answersD[c].addEventListener('click', function (){
         console.log('you clicked D')
+
+        let oldAnswer = document.querySelector( 'div.answer.selected' )
         
-        let optionSelected = document.createElement ('option')
-        optionSelected.classList.add ('selected')
+        if (oldAnswer) {
+            oldAnswer.classList.remove('selected')
+        }
+        
+        
+        this.classList.add ('selected')
     })
 }
 
